@@ -1,0 +1,173 @@
+/* 
+==================================
+==== style component contact  ====
+==================================
+== 1) style left-section contact
+== 2) style right-section contact
+== 3) responsive contact using media 
+
+*/
+
+/* 
+==================================
+==1) style left-section contact ==
+==================================
+*/
+.contact {
+    margin-top: 1.5em;
+    padding: 3em;
+    justify-content: space-between;
+}
+.contact div:first-child h1{
+  color: var(--color_primary);
+  margin-bottom: .4em;
+}
+.contact div:first-child p{
+    color: var(--subtitle);
+}
+.contact div:nth-child(2){
+    display: flex;
+}
+.contact div.left-section{
+    min-width: 50%;
+
+}
+.contact div:nth-child(2) form {
+   padding: 2em 0em;
+   width: 50%;
+   width: 100%;
+}
+.contact div:nth-child(2) form div{
+    margin-bottom: 1em;
+    align-items: center;
+}
+.contact div:nth-child(2) form #name,
+.contact div:nth-child(2) form #email,
+.contact div:nth-child(2) form #message{
+    all: unset;
+    background-color: var(--bg_nav);
+    width: 70%;
+    margin-left: .6em;
+    border-radius: .1em;
+    font-size: 1.2em;
+    padding:.3em .5em;
+    
+}
+.contact div:nth-child(2) form #message{
+    min-height: 7em;
+    resize: vertical;
+}
+.contact div:nth-child(2) form label{
+    color: var(--subtitle);
+
+}
+.light .contact div:nth-child(2) form  #btn_send_message{
+    background-color: #333;
+    color: white;
+}
+.light .contact div:nth-child(2) form  #btn_send_message:hover{
+    color: white;
+}
+.contact div:nth-child(2) form  #btn_send_message{
+    all: unset;
+    color: var(--subtitle);
+    background-color: var(--bg_nav);
+    padding:.6em 2em;
+    border-radius: .1em;
+        
+ }
+ .contact div:nth-child(2) form  #btn_send_message:hover{
+    color: var(--color_primary);
+    scale: .93;
+        
+ }
+button:disabled{
+    cursor: not-allowed;
+    opacity: .4;
+}
+#messageSubmitting{
+    display: flex;
+    align-items: center;
+}
+#messageSubmitting .animationDone{
+    width: 70px;
+    margin-top: 1em;
+}
+#messageSubmitting span {
+    margin-left: -1em;
+}
+/*  
+==================================
+==2) style right-section contact==
+==================================
+*/
+div.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.contact div.right-section{
+    /* border: 2px solid red ; */
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+}
+.contact div.right-section .animation{
+    width:60%;
+}
+
+/* 
+=====================================
+==3) responsive contact using media =
+=====================================
+ */
+
+@media (max-width:1629px) {
+   
+    .contact div:nth-child(2) form #email,
+    .contact div:nth-child(2) form #message {
+        width:60%;  
+     }
+     .contact div.right-section .animation{
+        width: 100%;
+     }
+}
+
+@media (max-width:1000px) {
+    .contact div.right-section{
+       display: none;
+    }
+    
+ }
+
+
+
+@media (max-width:600px) {
+    .contact div:nth-child(2) form{
+        width: 100%;
+        padding-top: 0%;
+      
+    }
+    .contact div:nth-child(2) form div {
+        align-items: start; 
+        margin: 1em 0em;
+        display: flex;
+        flex-direction: column;
+      
+     }
+    .contact div:nth-child(2) form label{
+        margin-bottom: .5em;
+        
+    }
+    .contact div:nth-child(2) form #email,
+    .contact div:nth-child(2) form #message {
+        margin: 0%;
+        width: 100%;
+        padding: .4em 0em;
+     }
+    
+}
+@media (min-width:1000px) {
+    .contact div:first-child h1{
+        font-size: 3em;
+     }
+ }

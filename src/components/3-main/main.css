@@ -1,0 +1,180 @@
+/* 
+==============================
+==== style component main ====
+==============================
+== 1) style left-section main
+== 2) style right-section main
+== 3) responsive main using media 
+
+*/
+
+main{
+  display: flex;
+  margin-top: 1.5em;
+  padding: 2em;
+
+}
+/* 
+==============================
+==1) style left-section main==
+==============================
+*/
+main div.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em;
+    height: fit-content;
+    min-width: 20%;
+}
+main div.left-section button{
+    all:unset;
+    padding: .5em 1.5em;
+    background-color: var(--bg_nav);
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: .2em;
+    font-size: 1.5em;
+    opacity: 0.7;
+    letter-spacing: .01em;
+    
+}
+main div.left-section button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+main div.left-section button.active{
+    border: 2px solid var(--blue);
+    opacity: 1;
+    background-color: #333;
+    color: white;
+}
+main div.left-section button:active{
+    scale: .9;
+}
+/* 
+==============================
+==2) style right-section main==
+==============================
+ */
+main div.right-section{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 1em; 
+}
+main div.right-section div.card{
+    background-color:var(--bg_nav);
+    width: 19em;
+    border-radius: .5em;
+    border: 2px solid var(--border_color);
+    transition: .3s;
+    padding: .3em;
+}
+main div.right-section div.card:hover{
+    border: 2px solid var(--blue);
+    cursor: pointer;
+    scale: 1.03;
+    rotate: 1deg;
+}
+main div.right-section div.card img{
+  width: 100%;
+  height: 11em;
+  border-radius: .5em .5em 0em 0em;
+}
+
+main div.right-section div.card div.body-card{
+    padding: 0em.5em ;
+}
+main div.right-section div.card div.body-card h1{
+    color: var(--color_primary);
+    text-transform: capitalize;
+    margin-bottom: .4em;
+}
+main div.right-section div.card div.body-card p{
+    height: 7.7vh;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    color: var(--subtitle);
+}
+main div.right-section div.card div.media-card{
+    display: flex;
+    justify-content: space-between;
+}
+main div.right-section div.card div.media-card a.icon{
+   color: var(--subtitle);
+   font-size: 1.4em;
+   transition: .3s;
+}
+main div.right-section div.card div.media-card a.icon:hover{
+    color: var( --color_primary);
+ }
+main div.right-section div.card div.media-card div:last-child a{
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    color: var(--blue);
+}
+main div.right-section div.card div.media-card div:last-child i{
+  margin-top: .3em;  
+}
+/* 
+===================================
+==3) responsive hero using media ==
+===================================
+*/
+@media (max-width:1500px){
+  
+    main div.left-section button{
+    padding: .6em 1em; 
+    font-size: 1.2em;
+    width: 8em;
+    }
+}
+
+@media (max-width:989px){
+    main{
+        padding: .5em;
+    }
+    main div.left-section button{
+        padding: .6em 1.1em; 
+        font-size: 1em;
+        width: 7.5em;
+     }
+
+}
+@media (max-width:895px) {
+    main div.left-section button{
+        width: 6em;
+     }
+}
+@media (max-width:600px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    main div.left-section {
+            display: flex;
+            flex-direction: row;
+            gap: .5em;
+            padding: 1em;
+            height: fit-content;
+            min-width: 20%;   
+            flex-wrap: wrap; 
+            justify-content: center;
+    }
+    main div.left-section button{
+        padding: .6em 1.1em; 
+        font-size: .9em;
+         width: 40%;
+     }
+     main div.right-section div.card{
+        width:90%;
+        margin: auto;
+        height: auto !important;
+    }
+}

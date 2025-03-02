@@ -1,0 +1,121 @@
+/* 
+==============================
+==== style component hero ====
+==============================
+== 1) style left-section hero
+== 2) style right-section hero
+== 3) responsive hero using media 
+
+*/
+
+.hero{
+  margin-top: 1.5em;
+  padding: 2em;
+  display: flex;
+
+}
+/* 
+==============================
+==1) style left-section hero==
+==============================
+*/
+.hero .left-section {
+ /* flex-grow: 1; */
+  padding-top: 8em;
+  max-width: 60%;
+}
+.hero .left-section .avatar .img-avatar img{
+   width: 70px; 
+   height: 70px ;
+   border:1px solid var(--border_color) ;
+   border-radius: 50%;
+   border: 1px solid var(--border_color);
+   padding: .1em;
+}
+.hero .left-section h1{
+    font-size: 4em;
+    line-height: 1.1em;
+    color: var(--color_primary);
+    margin-bottom: .4em;
+}
+.hero .left-section p{
+    font-size: 1em;
+    color: var(--subtitle);
+}
+.hero .left-section .hero-media  ul {
+  display: flex;  
+}
+.hero .left-section ul li {
+      list-style-type: none;
+      margin: 1em .5em;
+}
+.hero .left-section ul li a{
+    text-decoration: none;
+    color: var(--subtitle);
+}
+.hero .left-section ul li a .icon{
+    font-size: 1.5em;
+    color: var(--subtitle);
+    transition: .3s;
+}
+.hero .left-section ul li a .icon:hover{
+    color: var(--color_primary);
+}
+/* 
+===============================
+==2) style right-section hero==
+===============================
+*/
+.hero .right-section {
+    display: flex;
+    align-items: center;
+}
+.hero .right-section  .animationDeveloper{
+    width: 100%;
+}
+/* 
+===================================
+==3) responsive hero using media ==
+===================================
+*/
+
+@media (max-width:1346px) {
+    .hero .left-section {
+         padding-top: 6em;
+         max-width: 50%;
+     }
+    .hero .left-section h1{
+        font-size: 3em;
+    }
+}
+@media (max-width:1088px) {
+    .hero .left-section h1{
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:925px) {
+    .hero .left-section h1{
+        font-size: 3em;
+    }
+    .hero .left-section{
+        max-width: 100%;
+    }
+    .hero  {
+        flex-direction: column-reverse;
+         
+    }
+}
+@media (max-width:600px) {
+    .hero .left-section {
+        padding: 1em;
+        max-width: 100%;
+    }
+    .hero .left-section h1{
+        font-size: 2em;
+    }
+    .hero .left-section p{
+        font-size: .7em;
+    }
+   
+}
