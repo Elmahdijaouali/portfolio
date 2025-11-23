@@ -1,0 +1,238 @@
+/* techStack.css */
+.tech-stack-section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.tech-stack-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tech-stack-header h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.tech-stack-header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tech-scroll-wrapper {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.tech-scroll-track {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+  animation: scrollHorizontal 40s linear infinite;
+}
+
+.tech-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 140px;
+  padding: 1.5rem 1rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(128, 126, 126, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: currentColor;
+  opacity: 0.7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tech-item:hover::before {
+  transform: scaleX(1);
+}
+
+.tech-icon {
+  transition: all 0.3s ease;
+  margin-bottom: 0.8rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.tech-item:hover .tech-icon {
+  transform: scale(1.2);
+}
+
+
+.tech-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Technology-specific colors with gradients */
+.tech-item[data-tech="HTML5"] { color: #E34F26; }
+.tech-item[data-tech="CSS3"] { color: #1572B6; }
+.tech-item[data-tech="Bootstrap"] { color: #7952B3; }
+.tech-item[data-tech="Tailwind CSS"] { color: #06B6D4; }
+.tech-item[data-tech="JavaScript"] { 
+  color: #ffcc00;
+}
+.tech-item[data-tech="TypeScript"] { color: #3178C6; }
+.tech-item[data-tech="React.js"] { 
+  color: #1572B6;
+}
+.tech-item[data-tech="Node.js"] { 
+  color: green;
+}
+.tech-item[data-tech="PHP"] { color: #777BB4; }
+.tech-item[data-tech="Java"] { color: #007396; }
+.tech-item[data-tech="Python"] { color: #3776AB; }
+.tech-item[data-tech="SQL"] { color: #4479A1; }
+.tech-item[data-tech="Laravel"] { color: #FF2D20; }
+.tech-item[data-tech="Express.js"] { 
+  color: white;
+}
+.tech-item[data-tech="MySQL"] { color: #4479A1; }
+.tech-item[data-tech="MongoDB"] { 
+  color: green;
+}
+.tech-item[data-tech="SQLite"] { color: #003B57; }
+.tech-item[data-tech="Sequelize"] { color: #52B0E7; }
+.tech-item[data-tech="Postman"] { color: #FF6C37; }
+.tech-item[data-tech="Git"] { color: #F05032; }
+.tech-item[data-tech="GitHub"] { 
+  color: white;
+}
+.tech-item[data-tech="Figma"] { color: #F24E1E; }
+
+
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-120px * 11 - 2rem * 11));
+  }
+}
+
+/* Gradient overlays for smooth edges */
+.tech-scroll-wrapper::before,
+.tech-scroll-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .tech-stack-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .tech-item {
+    min-width: 110px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 3rem 0;
+  }
+  
+  .tech-stack-header h2 {
+    font-size: 2rem;
+  }
+  
+  .tech-stack-header p {
+    font-size: 1rem;
+  }
+  
+  .tech-item {
+    min-width: 100px;
+    height: 120px;
+    padding: 1rem 0.8rem;
+  }
+  
+  .tech-scroll-wrapper::before,
+  .tech-scroll-wrapper::after {
+    width: 50px;
+  }
+}
+
+/* Floating animation for background elements */
+.floating-bg {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.floating-bg-1 {
+  width: 300px;
+  height: 300px;
+  background: #667eea;
+  top: 10%;
+  left: 5%;
+  animation: float 15s ease-in-out infinite;
+}
+
+.floating-bg-2 {
+  width: 200px;
+  height: 200px;
+  background: #764ba2;
+  bottom: 10%;
+  right: 5%;
+  animation: float 12s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}

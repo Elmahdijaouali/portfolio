@@ -31,15 +31,10 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
         >
-         I’m a web developer currently studying at OFPPT.
-          I have a strong foundation in web technologies, including HTML, CSS
-          and tailwind css for front-end , and JavaScript for interactive
-          features. I’m also experienced with React.js for building modern user
-          interfaces and I am woreked by redux js for managment state . On the
-          back end, I’m proficient in PHP, SQL, MySQL and Mongodb, and I’ve used
-          Laravel for create full stack application or for create API.
-          Additionally, I’ve learned the basics of Python and am eager to
-          further explore it.
+        I’m a passionate Full-Stack Developer specializing in Laravel, React.js, and Express.js, with strong experience using PHP, JavaScript, Python, Java, MySQL, MongoDB, and Tailwind CSS. I enjoy designing and building scalable, high-quality web applications that solve real-world problems.
+        I am currently pursuing a Bachelor’s degree in Génie Informatique et Gouvernance Digitale at EST Kénitra, where I continue to expand my skills in software engineering, project management, and digital governance.
+        I thrive in Agile environments, enjoy teamwork, and love learning new technologies. I’m also actively improving my knowledge in Java, Spring Boot, UML, and Software Testing.
+        I’m open to opportunities as a Full Stack Engineer, Frontend Developer, or Backend Developer, where I can contribute to impactful projects and grow as a developer.
         </motion.p>
         <div className="hero-media">
           <ul>

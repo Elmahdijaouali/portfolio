@@ -39,6 +39,7 @@
 }
 .contact div:nth-child(2) form div{
     margin-bottom: 1em;
+    display: flex;
     align-items: center;
 }
 .contact div:nth-child(2) form #name,
@@ -51,7 +52,12 @@
     border-radius: .1em;
     font-size: 1.2em;
     padding:.3em .5em;
+    margin-left: auto;
     
+}
+
+.contact div:nth-child(2) form #email{
+    display: block !important;
 }
 .contact div:nth-child(2) form #message{
     min-height: 7em;
@@ -59,6 +65,7 @@
 }
 .contact div:nth-child(2) form label{
     color: var(--subtitle);
+    display: block;
 
 }
 .light .contact div:nth-child(2) form  #btn_send_message{

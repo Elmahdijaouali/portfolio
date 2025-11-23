@@ -6,6 +6,7 @@ import Contact from './components/4-contact/Contact';
 import Footer from './components/5-footer/Footer';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import TechStack from './components/techStack/TechTask';
 
 
 
@@ -22,6 +23,8 @@ function App() {
           <Header />
            
             <Hero />
+            <div className='divider' />
+            <TechStack />
             <div className='divider' />
             <Main />
             <div className='divider' />

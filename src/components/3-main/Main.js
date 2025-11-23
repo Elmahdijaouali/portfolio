@@ -39,12 +39,12 @@ export default function Main(){
                            setBtnActive("html")
                            handlefilterProject("html")
                    }}   className={btnActive === "html" ? "active" : null} >Html & css</button>
-    
+                {/*
                    <button onClick={()=>{ 
                             setBtnActive("JavaScript")
                             handlefilterProject("javaScript")
                    }}  className={btnActive === "JavaScript" ? "active" : null} >JavaScript</button>
-    
+                       */}
                   <button onClick={()=>{ 
                              setBtnActive("react js")
                              handlefilterProject("react")
@@ -61,6 +61,7 @@ export default function Main(){
                            setBtnActive("laravel")
                            handlefilterProject("laravel")
                   }}   className={btnActive === "laravel" ? "active" : null} >laravel</button>
+                 
 
         </div>
         <div className='right-section'>

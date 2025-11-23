@@ -1,6 +1,8 @@
 import './footer.css' ;
 
 export default function Footer(){
+   
+
     return (
    <footer>
         <div className='left-footer'>
@@ -13,7 +15,7 @@ export default function Footer(){
            </ul>
         </div>
         <div className='right-footer'>
-          &copy; 2024 Elmahadi Jaouali,All right reserved 
+          &copy; 2025 Elmahadi Jaouali,All right reserved 
         </div>
    </footer>
     )
