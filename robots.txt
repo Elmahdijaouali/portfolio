@@ -1,5 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
-
-Sitemap: https://elmahdijaouali.me/sitemap.xml
+Disallow: /node_modules
+Disallow: /src
+Sitemap: https://elmahdijaouali.com/sitemap.xml
