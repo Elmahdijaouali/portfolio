@@ -46,7 +46,7 @@ export default function Header() {
           <a href="#project">Project</a>
         </li>
         <li>
-          <a href="#article">Article</a>
+          <a href="https://blog.elmahdijaouali.me/">Article</a>
         </li>
         <li>
           <a href="#contact">Contact us</a>
@@ -106,7 +106,7 @@ export default function Header() {
                   onClick={() => {
                     setShowMenu(false);
                   }}
-                  href="#article"
+                  href="https://blog.elmahdijaouali.me/"
                 >
                   Article
                 </a>
