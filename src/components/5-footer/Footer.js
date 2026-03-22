@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="#project">Project</a>
           </li>
           <li>
-            <a href="#article">Article</a>
+            <a href="https://blog.elmahdijaouali.me/">Article</a>
           </li>
           <li>
             <a href="#contact">Contact us</a>
