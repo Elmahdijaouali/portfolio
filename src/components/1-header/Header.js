@@ -88,16 +88,6 @@ export default function Header() {
     </header>
   );
 }
-// function add class mode css to body
-function classMode(mode){
-    if(mode==="dark"){
-        document.body.classList.add("dark")
-        document.body.classList.remove("light")
-      }else{
-          document.body.classList.add("light")
-          document.body.classList.remove("dark")
-      }
-}
 // this is navbar my portfolio
 function NavBar(){
     return (
