@@ -1,5 +1,5 @@
 
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -89,6 +89,7 @@ export default function Header() {
   );
 }
 // this is navbar my portfolio
+// eslint-disable-next-line no-unused-vars
 function NavBar(){
     return (
         <nav>
