@@ -29,7 +29,7 @@ export default function Header(){
                       <li><button className='btn_close' onClick={()=>{setShowMenu(false)}}><FontAwesomeIcon icon={faXmark} /></button></li>
                       <li><a onClick={()=>{setShowMenu(false)}} href='#about' >About</a></li>
                       <li><a  onClick={()=>{setShowMenu(false)}} href='#project' >Project</a></li>
-                      <li><a onClick={()=>{setShowMenu(false)}}  href='#article' >Article</a></li>
+                      <li><a onClick={()=>{setShowMenu(false)}}  href='https://blog.elmahdijaouali.me/' >Article</a></li>
                       {/* <li><a onClick={()=>{setShowMenu(false)}} href='' >Speaking</a></li> */}
                       <li><a onClick={()=>{setShowMenu(false)}} href='#contact' >Contact us  </a></li>
                    </ul>
@@ -66,7 +66,7 @@ function NavBar(){
             <ul>
               <li><a  href='#about' >About</a></li>
               <li><a href='#project' >Project</a></li>
-              <li><a href='#article' >Article</a></li>
+              <li><a href='https://blog.elmahdijaouali.me/' >Article</a></li>
               {/* <li><a href='' >Speaking</a></li> */}
               <li><a href='#contact' >Contact us  </a></li>
             </ul>
